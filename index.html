@@ -9,7 +9,7 @@
     <div id="app">
         <h2>Lista email</h2>
         <ul>
-            <li v-for="email,index in emailList">{{email}}</li>
+            <li v-for="email,index in emailList" v-if="emailList.length==10">{{email}}</li>
         </ul>
     </div>
     
